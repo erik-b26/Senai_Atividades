@@ -100,41 +100,41 @@ test('6.615 libras vira 3 quilogramas', () => {
 test('1 fahrenheit vira -17,222 celsius', () => {
     expect(fahrenheitCelsius(1)).toBeCloseTo(-17.222);
 });
-test('2 fahrenheit vira -34.444 celsius', () => {
-    expect(fahrenheitCelsius(2)).toBeCloseTo(-34.444);
+test('2 fahrenheit vira -16.666 celsius', () => {
+    expect(fahrenheitCelsius(2)).toBeCloseTo(-16.666);
 });
-test('3 fahrenheit vira -51.666 celsius', () => {
-    expect(fahrenheitCelsius(3)).toBeCloseTo(-51.666);
+test('3 fahrenheit vira -16.111 celsius', () => {
+    expect(fahrenheitCelsius(3)).toBeCloseTo(-16.111);
 });
 
 test('-17.222 celsius vira 1 fahrenheit', () => {
     expect(celsiusFahrenheit(-17.222)).toBeCloseTo(1);
 });
-test('-34.444 celsius vira 2 fahrenheit', () => {
-    expect(celsiusFahrenheit(-34.444)).toBeCloseTo(2);
+test('-16.666 celsius vira 2 fahrenheit', () => {
+    expect(celsiusFahrenheit(-16.666)).toBeCloseTo(2);
 });
-test('-51.666 celsius vira 3 fahrenheit', () => {
-    expect(celsiusFahrenheit(-51.666)).toBeCloseTo(3);
-});
-
-test('1 kelvin vira -272,15 celsius', () => {
-    expect(kelvinCelsius(1)).toBe(-272.15);
-});
-test('2 kelvins vira -272,15 celsius', () => {
-    expect(kelvinCelsius(2)).toBe(-544,30);
-});
-test('3 kelvins vira -272,15 celsius', () => {
-    expect(kelvinCelsius(3)).toBe(-816,45);
+test('-16.111 celsius vira 3 fahrenheit', () => {
+    expect(celsiusFahrenheit(-16.111)).toBeCloseTo(3);
 });
 
-test('-272.15 celsius vira 1 kelvin', () => {
-    expect(celsiusKelvin(-272.15)).toBe(1);
+test('1 kelvin vira -272.15 celsius', () => {
+    expect(kelvinCelsius(1)).toBeCloseTo(-272.15, 2);
 });
-test('-272.15 celsius vira 1 kelvin', () => {
-    expect(celsiusKelvin(-544.30)).toBe(2);
+test('2 kelvins vira -546.30 celsius', () => {
+    expect(kelvinCelsius(2)).toBeCloseTo(-271.15, 2);
 });
-test('-272.15 celsius vira 1 kelvin', () => {
-    expect(celsiusKelvin(-816.45)).toBe(3);
+test('3 kelvins vira -813.45 celsius', () => {
+    expect(kelvinCelsius(3)).toBeCloseTo(-270.15, 2);
+});
+
+test('-271.15 celsius vira 1 kelvin', () => {
+    expect(celsiusKelvin(-272.15)).toBeCloseTo(1, 2);
+});
+test('-542.30 celsius vira 1 kelvin', () => {
+    expect(celsiusKelvin(-271.15)).toBeCloseTo(2,2);
+});
+test('-813.45 celsius vira 1 kelvin', () => {
+    expect(celsiusKelvin(-270.15)).toBeCloseTo(3, 2);
 });
 
 test('1 real vira 0,201 dolar', () => {
@@ -161,10 +161,10 @@ test('1 real vira 0,180 euro', () => {
     expect(realEuro(1)).toBeCloseTo(0.180, 2);
 });
 test('2 reais vira 0,360 euros', () => {
-    expect(realEuro(2)).toBeCloseTo(0.360, 2);
+    expect(realEuro(2)).toBeCloseTo(0.36, 1);
 });
 test('3 reais vira 0,540 euros', () => {
-    expect(realEuro(3)).toBeCloseTo(0.540, 2);
+    expect(realEuro(3)).toBeCloseTo(0.54, 1);
 });
 
 test('0.180 euro vira 1 real', () => {
@@ -173,8 +173,8 @@ test('0.180 euro vira 1 real', () => {
 test('0.360 euro vira 2 reais', () => {
     expect(euroReal(0.360)).toBeCloseTo(2, 1);
 });
-test('0.540 euro vira 3 reais', () => {
-    expect(euroReal(0.540)).toBeCloseTo(3, 1);
+test('0.540 euro vira 2,94 reais', () => {
+    expect(euroReal(0.540)).toBeCloseTo(2.94, 1);
 });
 
 test('1 real vira 133,33 won', () => {

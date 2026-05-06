@@ -1,0 +1,18 @@
+{
+  "name": "ferramentas",
+  "version": "1.0.0",
+  "description": "\"# Senai_Atividades\"",
+  "main": "index.js",
+  "dependencies": {
+    "jast": "^0.2.1"
+  },
+  "devDependencies": {
+    "jest": "^30.3.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

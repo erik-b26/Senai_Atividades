@@ -9,11 +9,11 @@ function pesMetro(p){
 }
 
 function quilometroMilha(km){
-    return km * 0.621371;
+    return km * 0.621;
 }
 
 function milhaquilometro(milha){
-    return milha / 0.621371;
+    return milha / 0.621;
 }
 
 function centimetroPolegada(cm){
@@ -27,11 +27,11 @@ function polegadaCentimetro(polegada){
 // ========== CONVERSORES DE PESO ==========
 
 function quilogramaLibra(kg){
-    return kg * 2.20462;
+    return kg * 2.205;
 }
 
 function libraQuilograma(libra){
-    return libra / 2.20462;
+    return libra / 2.205;
 }
 
 // ========== CONVERSORES DE TEMPERATURA ==========
@@ -71,11 +71,11 @@ function euroReal(euro){
 }
 
 function realWon(real){
-    return real * 280.5; // taxa aproximada
+    return real * 133.33; // taxa aproximada
 }
 
 function wonReal(won){
-    return won / 280.5;
+    return won / 133.33;
 }
 
 // ========== CONVERSORES DE TEMPO ==========
